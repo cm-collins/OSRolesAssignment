@@ -1,3 +1,19 @@
 <Solution>
-  <Project Path="OSRolesAssignment/OSRolesAssignment.csproj" />
+  <Project Path="DeviceSystemInfo/DeviceSystemInfo.csproj">
+    <BuildDependency Project="FileManagement/FileManagement.csproj" />
+    <BuildDependency Project="MemoryMonitoring/MemoryMonitoring.csproj" />
+    <BuildDependency Project="Networking/Networking.csproj" />
+    <BuildDependency Project="ProcessManagement/ProcessManagement.csproj" />
+  </Project>
+  <Project Path="FileManagement/FileManagement.csproj" />
+  <Project Path="MemoryMonitoring/MemoryMonitoring.csproj" />
+  <Project Path="Networking/Networking.csproj" />
+  <Project Path="OSRolesAssignment/OSRolesAssignment.csproj">
+    <BuildDependency Project="DeviceSystemInfo/DeviceSystemInfo.csproj" />
+    <BuildDependency Project="FileManagement/FileManagement.csproj" />
+    <BuildDependency Project="MemoryMonitoring/MemoryMonitoring.csproj" />
+    <BuildDependency Project="Networking/Networking.csproj" />
+    <BuildDependency Project="ProcessManagement/ProcessManagement.csproj" />
+  </Project>
+  <Project Path="ProcessManagement/ProcessManagement.csproj" />
 </Solution>
